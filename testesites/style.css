@@ -1,0 +1,78 @@
+    body {
+     font-family: monospace;
+    }
+    ul {
+     font-family: helvetica;
+    } 
+    li {
+     list-style: circle;
+    }
+    .list {
+     list-style: square;
+    }
+    .light-theme {
+     color: white;
+     background-color: crimson;
+    }
+    :root {
+        --cookiebrown: #C7A317;
+        --white: #ffffff;
+        --lavared: #E42217;
+    }
+    .light-theme {
+        --bg: var(--black);
+        --fontColor:var(--black);
+        --btnBG: var(--cookiebrown);
+        --btnFontColor: var(--white);
+    }
+    .dark-theme{
+        --bg:var(--cookiebrown);
+        --fontColor:var(--lavared);
+        --btnBG: var(--black);
+        --btnFontColor: var(--white);
+    }
+    *{
+        color: var(--lavared);
+        font-family: helvetica;
+    }
+
+    body{
+        background: var(--bg);
+    }
+    .btn {
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+    }
+    .btn{
+        position: absolute;
+        top: 20px;
+        left: 1200px;
+        height: 50px;
+        width: 60px;
+        border-radius: 50%;
+        border: none;
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+    }
+    .btn:focus { outline-style: none;}
+    div img{
+        width: 275px;
+        height: auto;
+        border: 6px solid #f7f3f3;
+        border-radius: 50px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .efdiv{
+        width: 200px;
+        height: auto;
+        padding: 30px;
+
+    }
+    .efdiv2{
+        width: 200px;
+        height: auto;
+        margin: 117px;
+    }
+   
+   
