@@ -19,6 +19,6 @@ public class Temperatura {
         double conv = conversão / temperaturas.size();
         return(conv);
     }
-    
+   
 
 }
