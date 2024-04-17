@@ -10,20 +10,29 @@ public class GerenciadorTarefas {
     }
 
     public void listar() {
+        
         for (Tarefa tarefa : tarefas) {
-            System.out.printf("(%s) %s - %s \n",
+            int cont =1;
+            System.out.printf("%d. (%s) %s - %s \n",
+                cont++,
                 tarefa.concluida ? "x" : " ",
                 tarefa.codigo,
                 tarefa.descricao);
         }
     }
     public void remover(int posicao){
-
+        tarefas.remove(posicao -1);
     }
     public void alterar(int posicao, String codigo, String descricao){
-    
+        
+        Tarefa t = tarefas.get(posicao -1);
+        t.codigo = codigo;
+        t.descricao = descricao;
+
+
     }
     public void concluir(int posicao){
-    
+        Tarefa t = tarefas.get(posicao -1);
+        t.concluida = true;
     }
 }

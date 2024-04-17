@@ -21,11 +21,11 @@ public class MainTarefa {
 
             switch (opcao) {
                 case 1:
-                    System.out.println("\nTarefa: ");
+                    System.out.println("\nCodigo: ");
                     ler.nextLine();
                     String desc = ler.nextLine();
 
-                    System.out.println("\nCódigo: ");
+                    System.out.println("\nTarefa: ");
                     String cod = ler.nextLine();
 
                     Tarefa novaTarefa = new Tarefa();
@@ -44,14 +44,34 @@ public class MainTarefa {
 
 
                 case 3:
+                System.out.println("\nPosição: ");
+                int pos = ler.nextInt();
+
+                gerenciador.remover(pos);
                     break;
 
 
                 case 4:
-                    break;
+                    System.out.println("\nPosição");
+                    int pos3 = ler.nextInt();
+                    
+                    System.out.println("\nCodigo ");
+                    String cod1 = ler.next();
+                    ler.nextLine();
 
+                    System.out.println("\nDescrição");
+                    String desc1 = ler.nextLine();
+
+                    gerenciador.alterar(pos3, cod1, desc1);
+
+                    break;
+                    
 
                 case 5:
+                System.out.println("\nPosição: ");
+                int pos2 = ler.nextInt();
+
+                gerenciador.concluir(pos2);
                     break;
             }
         }
