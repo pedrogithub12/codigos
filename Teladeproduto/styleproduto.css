@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+.product-container {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+}
+
+.product-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-details {
+    flex: 2;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.size-selector, .quantity-selector, .shipping-calculator {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select, input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.product-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.product-info p, .product-info ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.product-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: auto; /* Garante que o footer fique no final */
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+
+    
+}
+
+footer a:hover {
+    text-decoration: underline;
+    
+}
+
+
+
+/* Cabeçalho */
+.header {
+    background-color: #333; /* Cor de fundo escura */
+    padding: 10px 20px;
+    color: #fff; /* Cor do texto */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff; /* Cor do texto dos links */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #c0bcbc; /* Cor ao passar o mouse */
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px 30px 8px 10px; /* Espaço para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 10px;
+    color: #333; /* Cor do ícone */
+    cursor: pointer;
+}
+
+/*.breadcrumb {
+    font-size: 14px;
+    color: #ccc;  Cor do texto do breadcrumb 
+}
+
+.breadcrumb span {
+    color: #fff; Cor do texto ativo 
+    font-weight: bold;
+}*/
