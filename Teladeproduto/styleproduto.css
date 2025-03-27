@@ -1,132 +1,20 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #fff; /* Fundo branco */
     color: #333;
-    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
+    flex-direction: column;
 }
-
-.product-container {
-    display: flex;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
-}
-
-.product-image {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.product-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.product-details {
-    flex: 2;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #e74c3c;
-    margin-bottom: 20px;
-}
-
-.size-selector, .quantity-selector, .shipping-calculator {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-select, input[type="number"], input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.add-to-cart {
-    background-color: #28a745;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.add-to-cart:hover {
-    background-color: #218838;
-}
-
-.product-info h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.product-info h3 {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.product-info p, .product-info ul {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.product-info ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: auto; /* Garante que o footer fique no final */
-}
-
-footer a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-
-    
-}
-
-footer a:hover {
-    text-decoration: underline;
-    
-}
-
-
 
 /* Cabeçalho */
 .header {
-    background-color: #333; /* Cor de fundo escura */
-    padding: 10px 20px;
-    color: #fff; /* Cor do texto */
+    background-color: #333;
+    padding: 15px 40px;
+    color: #fff;
 }
 
 .header-top {
@@ -137,15 +25,16 @@ footer a:hover {
 }
 
 .nav-links a {
-    margin-right: 20px;
+    margin-right: 25px;
     text-decoration: none;
-    color: #fff; /* Cor do texto dos links */
+    color: #fff;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .nav-links a:hover {
-    color: #c0bcbc; /* Cor ao passar o mouse */
+    color: #c0bcbc;
 }
 
 .search-bar {
@@ -155,26 +44,182 @@ footer a:hover {
 }
 
 .search-bar input {
-    padding: 8px 30px 8px 10px; /* Espaço para o ícone */
+    padding: 10px 35px 10px 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 200px;
+    border-radius: 20px;
+    width: 250px;
     font-size: 14px;
 }
 
 .search-bar i {
     position: absolute;
-    right: 10px;
-    color: #333; /* Cor do ícone */
+    right: 15px;
+    color: #333;
     cursor: pointer;
+    font-size: 18px;
 }
 
-/*.breadcrumb {
-    font-size: 14px;
-    color: #ccc;  Cor do texto do breadcrumb 
+/* Conteúdo do produto */
+.product-container {
+    display: flex;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+    gap: 50px;
 }
 
-.breadcrumb span {
-    color: #fff; Cor do texto ativo 
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-details {
+    flex: 1;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
     font-weight: bold;
-}*/
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 30px 0;
+}
+
+.size-selector, .quantity-selector {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.add-to-cart {
+    background-color: #000;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+
+.shipping-calculator {
+    margin: 30px 0;
+}
+
+.shipping-calculator label {
+    margin-bottom: 15px;
+}
+
+.shipping-calculator input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Informações do produto */
+.product-info {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 20px;
+    
+}
+
+.product-info h2 {
+    text-align: center;
+    font-size: 26px; /* Aumenta o tamanho do título "Informações" */
+    margin-bottom: 25px;
+    color: #000;
+    text-transform: uppercase; /* Opcional: deixa em caixa alta como no design */
+    letter-spacing: 1px; /* Melhora a legibilidade */
+}
+
+.product-info h3 {
+    font-size: 20px; /* Aumenta um pouco os subtítulos */
+    margin: 30px 0 20px; /* Aumenta o espaçamento */
+    color: #000;
+}
+
+.product-info p {
+    
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 17px; /* Aumenta levemente o tamanho do texto */
+    line-height: 1.8; /* Espaçamento maior entre linhas */
+}
+
+.product-info ul {
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.product-info li {
+    text-align: left;
+    list-style-position: inside;
+    line-height: 1.8; /* Espaçamento maior entre linhas */
+}
+
+.product-info li:before {
+    display: none; /* Remove a bolinha adicional */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
