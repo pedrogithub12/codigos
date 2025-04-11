@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f7f7f7;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    color: #007863;
+  }
+  
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .field {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .group .field {
+    flex: 1;
+  }
+  
+  .address-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .btn {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background-color: #007863;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-add {
+    margin-top: 1rem;
+    background-color: #D4AC0D;
+  }
+  
