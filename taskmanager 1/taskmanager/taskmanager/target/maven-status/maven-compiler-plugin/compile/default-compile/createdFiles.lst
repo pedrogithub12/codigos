@@ -1,0 +1,8 @@
+br\com\senac\tads\dsw\taskmanager\datasource\repository\TaskRepository.class
+br\com\senac\tads\dsw\taskmanager\controllers\TaskController.class
+br\com\senac\tads\dsw\taskmanager\TaskmanagerApplication.class
+br\com\senac\tads\dsw\taskmanager\domainmodel\Task$TaskBuilder.class
+br\com\senac\tads\dsw\taskmanager\domainmodel\Task$Priority.class
+br\com\senac\tads\dsw\taskmanager\domainmodel\Task$Status.class
+br\com\senac\tads\dsw\taskmanager\service\TaskService.class
+br\com\senac\tads\dsw\taskmanager\domainmodel\Task.class
